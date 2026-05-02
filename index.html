@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktikum Pemrograman Web B</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="main-wrapper">
+        <section class="theory-section">
+            <h2 class="section-title">Laporan Teori Pemrograman Web B</h2>
+            
+            <div class="theory-content">
+                <h3>1. Pertanyaan Seputar Tag</h3>
+                <p><strong>a. Apa yang dimaksud dengan tag pada html?</strong> Tag adalah instruksi khusus diapit kurung sudut (&lt; &gt;) untuk memberi tahu browser cara menampilkan konten.</p>
+                <p><strong>b. Apa itu pembuka dan penutup tag?</strong> Tag pembuka memulai elemen dan tag penutup mengakhirinya. Tidak semua tag berpasangan; contohnya <em>self-closing tags</em> seperti &lt;img&gt; dan &lt;br&gt;.</p>
+
+                <h3>2. Pertanyaan Seputar Element</h3>
+                <p><strong>a. Apa itu element?</strong> Kesatuan utuh yang terdiri dari tag pembuka, atribut, konten, hingga tag penutup.</p>
+                <p><strong>b. Apa itu tagname, attribute dan content?</strong> Tagname adalah identitas tag (p, h1), Attribute adalah informasi tambahan (src, href), dan Content adalah isi di antara tag.</p>
+                <p><strong>c. Apakah elemen dapat ditumpuk?</strong> Ya (nesting), membentuk hierarki parent-child selama urutan penutupan tag benar agar struktur tetap valid.</p>
+
+                <h3>3. Pertanyaan Seputar Anchor</h3>
+                <p><strong>a. Apa itu anchor?</strong> Tag &lt;a&gt; yang digunakan untuk membuat hyperlink penghubung antar dokumen atau bagian halaman.</p>
+                <p><strong>b. Bagaimana cara berfungsinya?</strong> Harus memiliki atribut <strong>href</strong> yang berisi URL tujuan dan diaktifkan melalui klik pengguna.</p>
+
+                <h3>4. Pertanyaan Seputar Multimedia</h3>
+                <p><strong>A. Text:</strong> b/strong (tebal), i/em (miring), u (garis bawah) untuk konten. h1-h6 dan p untuk struktur.</p>
+                <p><strong>B. Image:</strong> Gambar tidak muncul bisa karena path salah atau format tidak didukung. Atribut <strong>alt</strong> berfungsi sebagai teks pengganti.</p>
+                <p><strong>C. Audio:</strong> Memasukkan sumber non-lokal menggunakan tag &lt;audio&gt; dengan URL absolut pada atribut <strong>src</strong>.</p>
+                <p><strong>D. Video:</strong> Jika autoplay gagal, tambahkan atribut <strong>muted</strong> karena kebijakan browser melarang suara otomatis.</p>
+            </div>
+        </section>
+
+        <hr class="divider">
+
+    <div class="main-wrapper">
+        <header class="form-header">
+            <h2>Form Data Mahasiswa</h2>
+        </header>
+
+        <form action="celebration gif sailor mooon.gif" 
+              method="GET" 
+              onsubmit="return handleSubmission()">
+            
+            <table class="form-table">
+                <tr>
+                    <td><label for="nama">Nama Lengkap</label></td>
+                    <td>:</td>
+                    <td>
+                        <input type="text" id="nama" name="nama" required placeholder="Nama Lengkap">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="nim">NIM</label></td>
+                    <td>:</td>
+                    <td>
+                        <input type="text" id="nim" name="nim" required maxlength="10" placeholder="Maks 10 Karakter">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="tanggal">Tanggal</label></td>
+                    <td>:</td>
+                    <td>
+                        <input type="date" id="tanggal" name="tanggal" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="3" class="button-area">
+                        <button type="submit" class="btn-primary">Kirim Data</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+    <script>
+        function handleSubmission() {
+            alert("Data Telah Berhasil di Kirim");
+            return true;
+        }
+    </script>
+
+</body>
+</html>
